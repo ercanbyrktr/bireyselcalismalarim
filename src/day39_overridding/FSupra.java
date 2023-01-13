@@ -16,6 +16,10 @@ public class FSupra extends EToyota {
         surekli kontrol eder
         Eger parent class'daki overridden method'u silerseniz
         CTE verir
+
+        @Override notasyonu kullanmak mecburi degildir
+        Eger Overridding method silinirse, kodun CTE vermesini istersek
+        @Override notasyonu kullanmaliyiz
          */
     }
 }

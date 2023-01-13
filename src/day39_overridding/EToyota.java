@@ -2,7 +2,11 @@ package day39_overridding;
 
 public class EToyota extends DAraba{
 
-    void yakit(){
+    void marka(){
+        System.out.println("Markamiz Toyota");
+    }
 
+    void motor(){
+        System.out.println("Toyota araclar Toyota marka motor kullanir");
     }
 }

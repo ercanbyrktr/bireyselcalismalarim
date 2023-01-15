@@ -15,14 +15,21 @@ public class C03_Exceptions {
 
         String[] urunler={"Nutella", "Cokokrem", "Sut", "Cay", "Findik"};
 
-        Scanner scan=new Scanner(System.in);
+        Scanner scan;
         System.out.println("Istediginiz urunun sira no'sunu giriniz");
         int istenenSira=0;
-        try {
-            istenenSira=scan.nextInt();
-        } catch (InputMismatchException deneme) {
-            System.out.println("Urun indexi icin bir tam sayi girmeniz gerekli ");
-            System.out.println(deneme);
+        boolean kontrol=true;
+
+        while (kontrol){
+            try {
+                scan=new Scanner(System.in);
+                istenenSira=scan.nextInt();
+                kontrol=false;
+            } catch (InputMismatchException deneme) {
+
+                System.out.println("Urun indexi icin bir tam sayi girmeniz gerekli ");
+
+            }
         }
         /*
         catch blogunun onundeki parentezde

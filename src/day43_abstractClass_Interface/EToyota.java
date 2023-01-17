@@ -1,6 +1,6 @@
 package day43_abstractClass_Interface;
 
-public class EToyota extends DAraba{
+public abstract class EToyota extends DAraba{
 
 
     @Override

@@ -17,7 +17,9 @@ public abstract class DAraba {
 
 
     }
-   protected abstract void motor();
+    protected abstract void yakit();
+    protected abstract void kaporta();
+    protected abstract void motor();
     /*
     sadece child class'larin mecburi tasiyacaklari ozellikleri belirleyen method'lar
     abstract method olur ve abstract method'larin body'si olmaz

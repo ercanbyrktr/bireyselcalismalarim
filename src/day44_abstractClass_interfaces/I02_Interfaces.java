@@ -1,6 +1,8 @@
 package day44_abstractClass_interfaces;
 
 public interface I02_Interfaces {
+    int SAYI=30;
+    String ISIM="Yildiz Koleji";
     /*
     Interface bir class degildir
 
@@ -24,5 +26,7 @@ public interface I02_Interfaces {
       Ancak Interface'lerde concrete method olmadigindan
       biz her methodu child class'da override etmek zorundayiz,
       Override ederken kimin soyledigini override ettigimizin onemi yok
+      4-Interface'ler neyin yapilmasi gerektigini soyler
+      ama nasıl yapilacagina karismaz
      */
 }

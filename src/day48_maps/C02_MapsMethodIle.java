@@ -7,14 +7,19 @@ public class C02_MapsMethodIle {
 
     public static void main(String[] args) {
 
-        Map<Integer,String>ogrenciMap=ReausableMethods.mapOlustur();
+        Map<Integer,String>ogrenciMap=ReusableMethods.mapOlustur();
         System.out.println(ogrenciMap);
 
         // value'lari sira numarali olarak yazdirin
-        ReausableMethods.tumValueSiraliYazdir(ogrenciMap);
+        ReusableMethods.tumValueSiraliYazdir(ogrenciMap);
 
         // Isim ve soyisimlerin birlikte olacagi bir liste olusturun
-        List<String> sinifisimsoyisimList=ReausableMethods.isimSoyisimListesiOlustur(ogrenciMap);
+        List<String> sinifisimsoyisimList=ReusableMethods.isimSoyisimListesiOlustur(ogrenciMap);
         System.out.println("isim soyisim listesi : " + sinifisimsoyisimList);
+
+
+
+
+
     }
 }

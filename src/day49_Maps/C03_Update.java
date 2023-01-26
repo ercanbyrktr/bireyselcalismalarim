@@ -5,6 +5,7 @@ import day48_maps.ReusableMethods;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class C03_Update {
     public static void main(String[] args) {
@@ -37,12 +38,28 @@ public class C03_Update {
         //ReusableMethods.tumValueSiraliYazdir(sinifListMap);
         Collection<String> valueCollection= sinifListMap.values();
 
-        for (String each: valueCollection
-             ) {
-            each=each.replaceAll("JDev","JavaDeveloper");
-            System.out.println(each);
+        // Map'i guncelleme yapmak icin key, yenideger'i map'e eklemeliyiz
+        // ornegin key 101 icin value Ali, Can, JDev
+        //guncelleme icin sinifListMap.put(101,Ali, Can, JavaDeveloper)
 
+        //bunu yapabilmek icin herbir key'e ve ona ait valu'ye ihtiyacim var
+
+        Set<Integer> keySeti = sinifListMap.keySet();
+        String eachValue;
+        for (Integer each:keySeti
+             ) {
+
+           eachValue= sinifListMap.get(each);
+           eachValue=eachValue.replace("JDev","JavaDeveloper");
+           sinifListMap.put(each,eachValue);
+           /*
+           biz key'lerin tamamini aldik
+           herbir key'in value'sunu get'irdik
+           value uzerinde degisikligi yapip
+           yeni halini put(key, yeniDeger) ile map'e koyduk
+            */
         }
+
         System.out.println(sinifListMap);
     }
 }
